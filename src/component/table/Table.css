@@ -1,0 +1,15 @@
+th {
+    padding: 12px;
+    text-align: left;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+/* Собственные стили для <td> */
+td {
+    padding: 10px; /* Изменяем отступы */
+    text-align: center; /* Изменяем выравнивание текста */
+    vertical-align: top; /* Изменяем вертикальное выравнивание */
+    border: 1px solid #ccc; /* Изменяем границы */
+}
