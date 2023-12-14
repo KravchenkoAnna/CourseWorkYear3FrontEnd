@@ -4,6 +4,7 @@ import axios from "axios";
 function CreateDetalForm({ onDetalCreated }) {
     const [formData, setFormData] = useState({
         name: "",
+        artikul: "",
         price: "",
         dateOfSettingPrice: ""
     });
@@ -27,13 +28,13 @@ function CreateDetalForm({ onDetalCreated }) {
         e.preventDefault();
 
         // Basic not-null checks
-        if (!formData.name || !formData.price || !formData.dateOfSettingPrice) {
+        if (!formData.name || !formData.artikul || !formData.price || !formData.dateOfSettingPrice) {
             setError("All fields are required.");
             return;
         }
 
-        if (formData.price < 0 ) {
-            setError("Field cannot be less than 0.");
+        if (formData.price < 0 || formData.artikul < 0) {
+            setError("Fields cannot be less than 0.");
             return;
         }
 
@@ -46,6 +47,7 @@ function CreateDetalForm({ onDetalCreated }) {
                 // Clear form data on successful submission
                 setFormData({
                     name: "",
+                    artikul: "",
                     price: "",
                     dateOfSettingPrice: ""
                 });
@@ -75,6 +77,17 @@ function CreateDetalForm({ onDetalCreated }) {
                                 name="name"
                                 placeholder="Name"
                                 value={formData.name}
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div>
+                            <label>Artikul:</label>
+                            <br />
+                            <input
+                                type="text"
+                                name="artikul"
+                                placeholder="Artikul"
+                                value={formData.artikul}
                                 onChange={handleChange}
                             />
                         </div>

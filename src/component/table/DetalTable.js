@@ -11,6 +11,7 @@ function DetalTable({ detals, onDetalUpdate, onDetalDelete }) {
             <tr>
                 <th rowSpan="2">ID</th>
                 <th rowSpan="2">Назва деталі</th>
+                <th rowSpan="2">Артикул деталі</th>
                 <th rowSpan="2">Ціна деталі</th>
                 <th rowSpan="2">Дата встановлення ціни</th>
                 <th rowSpan="2">Оновлення даних</th>
@@ -22,6 +23,7 @@ function DetalTable({ detals, onDetalUpdate, onDetalDelete }) {
                 <tr key={detal.id}>
                     <td>{detal.id}</td>
                     <td>{detal.name}</td>
+                    <td>{detal.artikul}</td>
                     <td>{detal.price}</td>
                     <td>{detal.dateOfSettingPrice}</td>
                     <td><DetalUpdateForm detal={detal} onUpdate={onDetalUpdate}/></td>

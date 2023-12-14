@@ -4,6 +4,7 @@ import axios from "axios";
 function DetalUpdateForm({ detal, onUpdate }) {
     const [formData, setFormData] = useState({
         name: detal.name,
+        artikul: detal.artikul,
         price: detal.price,
         dateOfSettingPrice: detal.dateOfSettingPrice
     });
@@ -27,12 +28,12 @@ function DetalUpdateForm({ detal, onUpdate }) {
         e.preventDefault();
 
         // Basic not-null checks
-        if (!formData.name || !formData.price || !formData.dateOfSettingPrice ) {
+        if (!formData.name || !formData.artikul || !formData.price || !formData.dateOfSettingPrice ) {
             setError("All fields are required.");
             return;
         }
 
-        if (formData.price < 0 ) {
+        if (formData.price < 0 || formData.artikul < 0) {
             setError("Fields cannot be less than 0.");
             return;
         }
@@ -68,6 +69,16 @@ function DetalUpdateForm({ detal, onUpdate }) {
                                 type="text"
                                 name="name"
                                 value={formData.name}
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div>
+                            <label>Artikul:</label>
+                            <br />
+                            <input
+                                type="text"
+                                name="artikul"
+                                value={formData.artikul}
                                 onChange={handleChange}
                             />
                         </div>
