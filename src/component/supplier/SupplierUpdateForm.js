@@ -43,7 +43,7 @@ function SupplierUpdateForm({ supplier, onUpdate }) {
                 setIsFormVisible(false); // Hide the form after submission
             }
         } catch (error) {
-            console.error("Error updating object data:", error);
+            console.error("Error updating supplier data:", error);
             setError(error.response.data);
         }
     };

@@ -57,7 +57,7 @@ function CreateSupplierForm({ onSupplierCreated }) {
     return (
         <div className="text-center mt-3">
             <button className="btn btn-info" onClick={toggleFormVisibility}>
-                {isFormVisible ? "Hide Form" : "Add a new object"}
+                {isFormVisible ? "Hide Form" : "Add a new supplier"}
             </button>
             {isFormVisible && (
                 <div className="d-flex justify-content-center">

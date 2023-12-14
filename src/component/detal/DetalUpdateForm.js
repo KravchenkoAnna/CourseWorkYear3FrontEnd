@@ -56,7 +56,7 @@ function DetalUpdateForm({ detal, onUpdate }) {
     return (
         <div className="text-center m-3">
             <button className="btn btn-info" onClick={toggleFormVisibility}>
-                {isFormVisible ? "Hide Update Form" : "Update Pollutant Data"}
+                {isFormVisible ? "Hide Update Form" : "Update Detal Data"}
             </button>
             {isFormVisible && (
                 <div className="d-flex justify-content-center">

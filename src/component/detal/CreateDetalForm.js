@@ -62,7 +62,7 @@ function CreateDetalForm({ onDetalCreated }) {
     return (
         <div className="text-center mt-3">
             <button className="btn btn-info" onClick={toggleFormVisibility}>
-                {isFormVisible ? "Hide Form" : "Add a new pollutant"}
+                {isFormVisible ? "Hide Form" : "Add a new detal"}
             </button>
             {isFormVisible && (
                 <div className="d-flex justify-content-center">

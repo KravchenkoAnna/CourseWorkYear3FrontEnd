@@ -10,10 +10,9 @@ function DetalTable({ detals, onDetalUpdate, onDetalDelete }) {
             <thead className="">
             <tr>
                 <th rowSpan="2">ID</th>
-                <th rowSpan="2">Назва забруднюючої речовини</th>
-                <th rowSpan="2">Величина масової витрати г/год.</th>
-                <th rowSpan="2">Гранично допустима концинтрація мг/м3</th>
-                <th rowSpan="2">Гранично допустимі викиди мг/м3</th>
+                <th rowSpan="2">Назва деталі</th>
+                <th rowSpan="2">Ціна деталі</th>
+                <th rowSpan="2">Дата встановлення ціни</th>
                 <th rowSpan="2">Оновлення даних</th>
                 <th rowSpan="2">Видалення</th>
             </tr>

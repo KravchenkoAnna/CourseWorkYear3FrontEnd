@@ -11,8 +11,9 @@ function SupplierTable({ suppliers, onSupplierUpdate, onSupplierDelete }) {
             <thead className="">
             <tr>
                 <th rowSpan="2">ID</th>
-                <th rowSpan="2">Назва підприємства</th>
-                <th rowSpan="2">Опис</th>
+                <th rowSpan="2">Ім'я постачальника</th>
+                <th rowSpan="2">Адреса постачальника</th>
+                <th rowSpan="2">Контактний номер телефону</th>
                 <th rowSpan="2">Оновлення даних</th>
                 <th rowSpan="2">Видалення</th>
             </tr>

@@ -14,6 +14,8 @@ function TradeTable({trades, onTradeUpdate, onTradeDelete}) {
                 <th rowSpan="2" className={"align align-middle"}>Назва деталі</th>
                 <th rowSpan="2" className={"align align-middle"}>Кількість деталей</th>
                 <th rowSpan="2" className={"align align-middle"}>Дата покупки</th>
+                <th rowSpan="2" className={"align align-middle"}>Оновлення даних</th>
+                <th rowSpan="2" className={"align align-middle"}>Видалення</th>
 
             </tr>
             </thead>
