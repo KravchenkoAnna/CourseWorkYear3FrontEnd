@@ -8,10 +8,13 @@ function SuppliersPage() {
     const [successMessage, setSuccessMessage] = useState(""); // State variable for success message
 
     useEffect(() => {
+        console.log("useEffect()");
         fetchSuppliers(); // Change function name
+
     }, []);
 
     const fetchSuppliers = async () => { // Change function name
+        console.log("fetchSuppliers()");
         const response = await axios.get("http://localhost:8080/api/v1/suppliers"); // Change API endpoint
         setSuppliers(response.data); // Change state variable name
     };
@@ -52,11 +55,11 @@ function SuppliersPage() {
     return (
         <div>
             <SupplierTable
-                objects={suppliers}
-                onObjectUpdate={onSupplierUpdate()}
-                onObjectDelete={onSupplierDelete()}
+                suppliers={suppliers}
+                onSupplierUpdate={onSupplierUpdate}
+                onSupplierDelete={onSupplierDelete}
             />
-            <CreateSupplierForm onSupplierCreated={onSupplierCreated()} />
+            <CreateSupplierForm onSupplierCreated={onSupplierCreated} />
             {successMessage && (
                 <div className="alert alert-success" role="alert">
                     {successMessage}
