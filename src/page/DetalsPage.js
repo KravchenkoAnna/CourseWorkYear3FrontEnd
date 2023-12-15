@@ -56,7 +56,7 @@ function DetalsPage() {
                 onDetalUpdate={onDetalUpdate}
                 onDetalDelete={onDetalDelete}
             />
-            <CreateDetalForm clonDetalCreated={onDetalCreated}/>
+            <CreateDetalForm onDetalCreated={onDetalCreated}/>
             {successMessage && (
                 <div className="alert alert-success" role="alert">
                     {successMessage}

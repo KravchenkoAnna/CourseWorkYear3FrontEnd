@@ -25,7 +25,7 @@ function DetalTable({ detals, onDetalUpdate, onDetalDelete }) {
                     <td>{detal.name}</td>
                     <td>{detal.artikul}</td>
                     <td>{detal.price}</td>
-                    <td>{detal.dateOfSettingPrice}</td>
+                    <td>{formatDate(detal.dateOfSettingPrice)}</td>
                     <td><DetalUpdateForm detal={detal} onUpdate={onDetalUpdate}/></td>
                     <td><DetalDeleteButton detal={detal} onDelete={onDetalDelete}/></td>
                 </tr>
@@ -35,4 +35,7 @@ function DetalTable({ detals, onDetalUpdate, onDetalDelete }) {
     );
 }
 
+function formatDate(dateArr) {
+    return dateArr[0] + "/" + dateArr[1] + "/" + dateArr[2];
+}
 export default DetalTable;

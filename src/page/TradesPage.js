@@ -50,7 +50,7 @@ function TradesPage() {
     };
 
     return (
-        <div className={"bg-dark"}>
+        <div className={"bg-success-subtle"}>
             <TradeTable
                 trades={trades}
                 onTradeUpdate={onTradeUpdate}

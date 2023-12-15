@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-function CreateTradeForm({ onPollutionCreated }) {
+function CreateTradeForm({ onTradeCreated }) {
     const [formData, setFormData] = useState({
         supplierName: "",
         detalName: "",
@@ -57,7 +57,7 @@ function CreateTradeForm({ onPollutionCreated }) {
                     purchaseDate: ""
                 });
                 setError(""); // Clear any previous errors
-                onPollutionCreated(); // You can use this callback to refresh your table or perform other actions
+                onTradeCreated(); // You can use this callback to refresh your table or perform other actions
                 setIsFormVisible(false); // Hide the form after submission
             }
         } catch (error) {
@@ -69,7 +69,7 @@ function CreateTradeForm({ onPollutionCreated }) {
     return (
         <div className="container text-center justify-content-center">
             <button
-                className="btn btn-info"
+                className="btn btn-outline-success"
                 onClick={toggleFormVisibility}
             >
                 {isFormVisible ? "Hide Form" : "Add"}

@@ -63,7 +63,7 @@ function TradeUpdateForm({trade, onUpdate}) {
 
     return (
         <div className="text-center m-3">
-            <button className="btn btn-primary btn-warning" onClick={toggleFormVisibility}>
+            <button className="btn btn-primary btn-info" onClick={toggleFormVisibility}>
                 {isFormVisible ? "Hide Update Form" : "Update"}
             </button>
             {isFormVisible && (
@@ -109,7 +109,7 @@ function TradeUpdateForm({trade, onUpdate}) {
                                 onChange={handleChange}
                             />
                         </div>
-                        <button type="submit" className="btn mt-2 btn-success">
+                        <button type="submit" className="btn mt-2 btn-primary">
                             Update
                         </button>
                         {error && <div className="text-danger">{error}</div>}

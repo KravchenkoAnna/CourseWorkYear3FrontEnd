@@ -7,7 +7,7 @@ import TradeDeleteButton from "../trade/TradeDeleteButton";
 function TradeTable({trades, onTradeUpdate, onTradeDelete}) {
     return (
         <Table>
-            <thead className="bg-dark">
+            <thead className="bg-light">
             <tr>
                 <th rowSpan="2" className={"align align-middle"}>ID</th>
                 <th rowSpan="2" className={"align align-middle"}>Ім'я постачальника</th>
@@ -26,7 +26,7 @@ function TradeTable({trades, onTradeUpdate, onTradeDelete}) {
                     <td className={"align align-middle"}>{trade.supplierName}</td>
                     <td className={"align align-middle"}>{trade.detalName}</td>
                     <td className={"align align-middle"}>{trade.detalQuantity}</td>
-                    <td className={"align align-middle"}>{trade.purchaseDate}</td>
+                    <td className={"align align-middle"}>{formatDate(trade.purchaseDate)}</td>
 
                     <td className={"align align-middle"}><TradeUpdateForm trade={trade}
                                                                               onUpdate={onTradeUpdate}/></td>
@@ -39,4 +39,7 @@ function TradeTable({trades, onTradeUpdate, onTradeDelete}) {
     );
 }
 
+function formatDate(dateArr) {
+    return dateArr[0] + "/" + dateArr[1] + "/" + dateArr[2];
+}
 export default TradeTable;

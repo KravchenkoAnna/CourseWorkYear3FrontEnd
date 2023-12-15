@@ -10,9 +10,9 @@ import SuppliersPage from "./page/SuppliersPage";
 function App() {
   return (
       <Router>
-        <div className={"bg-dark"}>
+        <div className={"bg-bg-success-subtle"}>
           <Navbar/>
-          <div className="container-fluid bg-dark mt-4">
+          <div className="container-fluid bg-success-subtle mt-4">
             <Routes>
               <Route path="/" element={<TradesPage/>}/>
               <Route path="/detals" element={<DetalsPage/>}/>

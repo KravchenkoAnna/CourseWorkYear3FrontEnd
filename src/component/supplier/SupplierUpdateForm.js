@@ -86,7 +86,7 @@ function SupplierUpdateForm({ supplier, onUpdate }) {
                                 onChange={handleChange}
                             />
                         </div>
-                        <button type="submit" className="btn mt-2 btn-success">
+                        <button type="submit" className="btn mt-2 btn-primary">
                             Update
                         </button>
                         {error && <div className="text-danger">{error}</div>}

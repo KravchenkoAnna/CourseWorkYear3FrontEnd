@@ -1,8 +1,8 @@
 function Table(props) {
 
     return (
-        <div className="container bg-dark">
-            <table className="table table-hover table-dark">
+        <div className="container">
+            <table className="table table-hover table-success">
                 {props.children}
             </table>
         </div>

@@ -3,8 +3,8 @@ import {NavLink} from "react-router-dom";
 
 function Navbar() {
     return (
-        <nav className="navbar justify-content-center navbar-dark bg-dark">
-            <div className="bg-dark w-100">
+        <nav className="navbar justify-content-center navbar-brand bg-success-subtle">
+            <div className="bg-success-subtle w-100">
                 <ul className="navbar-nav w-100 justify-content-center list-group-horizontal">
                     <li className="nav-item m-2">
                         <NavLink

@@ -17,7 +17,7 @@ function SupplierDeleteButton({ supplier, onDelete }) {
             setIsConfirmationVisible(false); // Hide the confirmation dialog
         } catch (error) {
             console.error("Error deleting supplier:", error);
-            setError(error.response.data); // Set error message
+            setError('An error occurred while deleting the detal data.'); // Set error message
         }
     };
 
