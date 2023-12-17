@@ -24,7 +24,7 @@ function TradeDeleteButton({ trade, onDelete }) {
     return (
         <div>
             {!isConfirmationVisible && (
-                <button className="btn btn-danger" onClick={toggleConfirmation}>
+                <button className="btn btn-outline-danger" onClick={toggleConfirmation}>
                     Delete
                 </button>
             )}
@@ -34,9 +34,11 @@ function TradeDeleteButton({ trade, onDelete }) {
                     <button className="btn btn-danger" onClick={handleDelete}>
                         Yes, Delete
                     </button>
+                    <div>
                     <button className="btn btn-secondary mt-2" onClick={toggleConfirmation}>
                         Cancel
                     </button>
+                    </div>
                     {error && <div className="text-danger mt-2">{error}</div>}
                 </div>
             )}

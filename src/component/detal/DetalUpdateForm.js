@@ -56,7 +56,7 @@ function DetalUpdateForm({ detal, onUpdate }) {
 
     return (
         <div className="text-center m-3">
-            <button className="btn btn-info" onClick={toggleFormVisibility}>
+            <button className="btn btn-outline-dark" onClick={toggleFormVisibility}>
                 {isFormVisible ? "Hide Update Form" : "Update Detal Data"}
             </button>
             {isFormVisible && (
@@ -102,7 +102,7 @@ function DetalUpdateForm({ detal, onUpdate }) {
                                 onChange={handleChange}
                             />
                         </div>
-                        <button type="submit" className="btn mt-2 btn-primary">
+                        <button type="submit" className="btn mt-2 btn-info">
                             Update
                         </button>
                         {error && <div className="text-danger">{error}</div>}

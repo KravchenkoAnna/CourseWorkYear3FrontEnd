@@ -24,7 +24,7 @@ function DetalDeleteButton({ detal, onDelete }) {
     return (
         <div>
             {!isConfirmationVisible && (
-                <button className="btn btn-danger" onClick={toggleConfirmation}>
+                <button className="btn btn-outline-danger" onClick={toggleConfirmation}>
                     Delete
                 </button>
             )}

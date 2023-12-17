@@ -35,7 +35,7 @@ function SuppliersPage() {
         setSuccessMessage("");
         try {
             await fetchSuppliers(); // Change function name
-            setSuccessMessage("Object created successfully"); // Change success message
+            setSuccessMessage("Supplier created successfully"); // Change success message
         } catch (error) {
             console.error("Error creating object:", error); // Change error message
         }

@@ -69,7 +69,7 @@ function CreateTradeForm({ onTradeCreated }) {
     return (
         <div className="container text-center justify-content-center">
             <button
-                className="btn btn-outline-success"
+                className="btn btn-warning"
                 onClick={toggleFormVisibility}
             >
                 {isFormVisible ? "Hide Form" : "Add"}

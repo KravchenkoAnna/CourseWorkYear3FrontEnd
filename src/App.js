@@ -10,7 +10,7 @@ import SuppliersPage from "./page/SuppliersPage";
 function App() {
   return (
       <Router>
-        <div className={"bg-bg-success-subtle"}>
+        <div className={"bg bg-success-subtle"}>
           <Navbar/>
           <div className="container-fluid bg-success-subtle mt-4">
             <Routes>

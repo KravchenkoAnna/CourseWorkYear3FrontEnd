@@ -56,7 +56,7 @@ function CreateSupplierForm({ onSupplierCreated }) {
 
     return (
         <div className="text-center mt-3">
-            <button className="btn btn-info" onClick={toggleFormVisibility}>
+            <button className="btn btn-warning" onClick={toggleFormVisibility}>
                 {isFormVisible ? "Hide Form" : "Add a new supplier"}
             </button>
             {isFormVisible && (
