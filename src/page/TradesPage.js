@@ -50,13 +50,15 @@ function TradesPage() {
     };
 
     return (
-        <div className={"bg-success-subtle"}>
-            <TradeTable
-                trades={trades}
-                onTradeUpdate={onTradeUpdate}
-                onTradeDelete={onTradeDelete}
-            />
-            <CreateTradeForm onTradeCreated={onTradeCreated}/>
+        <div className="bg-success-subtle">
+            <div className="bg-success-subtle">
+                <TradeTable
+                    trades={trades}
+                    onTradeUpdate={onTradeUpdate}
+                    onTradeDelete={onTradeDelete}
+                />
+                <CreateTradeForm onTradeCreated={onTradeCreated}/>
+            </div>
         </div>
     );
 }
